@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { AddUser } from './Components/AddUser';
+import Dashboard from './Components/Dashboard';
 import EditUser from './Components/EditUser';
 import { Nopage } from './Components/NoPage';
 import UserComponent from './Components/UserComponent';
@@ -41,7 +42,9 @@ const [user, setUser] = useState(data)
         </Route>
 
         
-      
+        <Route path="/dashboard">
+           <Dashboard/>
+        </Route>
 
 
         <Route path="/students">
@@ -58,4 +61,11 @@ const [user, setUser] = useState(data)
 }
 
 export default App;
+
+//CRUD --
+//Create - done
+//Read - done 
+//update - done
+//delete - done
+// router dom - done
 
