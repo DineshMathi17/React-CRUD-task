@@ -4,7 +4,7 @@ import BaseApp from "../Core/Base";
 
 export function AddUser({ user, setUser }) {
     const history = useHistory()
-    //defining states
+   
     const [name, setName] = useState("");
     const [id, setId] = useState("");
     const [email, setEmail] = useState("");
