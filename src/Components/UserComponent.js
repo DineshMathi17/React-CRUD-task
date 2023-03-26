@@ -7,7 +7,7 @@ import BaseApp from "../Core/Base";
 export default function UserComponent({user, setUser}){
 const history = useHistory();
 
-   //functionality 
+
    const deleteUser = (idx)=>{
     const alterList = user.filter((per)=>per.id !== idx);
      setUser(alterList)
