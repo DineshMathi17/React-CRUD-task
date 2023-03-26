@@ -23,12 +23,12 @@ const EditUser = ({ user, setUser }) => {
 
   }, []);
 
-  //
+  
   const updateUser = () => {
-    // step 1 : collecting new data
+    
     const editIndex = user.findIndex(per => per.id === id)
     console.log(editIndex)
-    //chnaged data in the input field
+
     const editedData = {
       id: idx,
       name,
@@ -36,7 +36,7 @@ const EditUser = ({ user, setUser }) => {
       age,
       batch
     }
-    //updating the user
+
     user[editIndex] = editedData
     setUser([...user]);
     history.push("/");
